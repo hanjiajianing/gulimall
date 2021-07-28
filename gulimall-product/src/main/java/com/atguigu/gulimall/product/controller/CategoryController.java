@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -25,6 +26,7 @@ import javax.validation.Valid;
  * @email leifengyang@gmail.com
  * @date 2019-10-01 22:50:32
  */
+@Slf4j
 @RestController
 @RequestMapping("product/category")
 public class CategoryController {
@@ -36,7 +38,7 @@ public class CategoryController {
      */
     @RequestMapping("/list/tree")
     public R list(){
-
+         log.info("ohhh");
         List<CategoryEntity> entities = categoryService.listWithTree();
 
 

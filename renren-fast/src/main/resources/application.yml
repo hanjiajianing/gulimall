@@ -60,23 +60,23 @@ mybatis-plus:
       logic-delete-value: -1
       logic-not-delete-value: 0
     banner: false
-  #原生配置
-  configuration:
-    map-underscore-to-camel-case: true
-    cache-enabled: false
-    call-setters-on-nulls: true
-    jdbc-type-for-null: 'null'
-
-
-renren:
-  redis:
-    open: false
-  shiro:
-    redis: false
-  # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】
-  jwt:
-    # 加密秘钥
-    secret: f4e2e52034348f86b67cde581c0f9eb5[www.renren.io]
-    # token有效时长，7天，单位秒
-    expire: 604800
-    header: token
+#  #原生配置
+#  configuration:
+#    map-underscore-to-camel-case: true
+#    cache-enabled: false
+#    call-setters-on-nulls: true
+#    jdbc-type-for-null: 'null'
+#
+#
+#renren:
+#  redis:
+#    open: false
+#  shiro:
+#    redis: false
+#  # APP模块，是通过jwt认证的，如果要使用APP模块，则需要修改【加密秘钥】
+#  jwt:
+#    # 加密秘钥
+#    secret: f4e2e52034348f86b67cde581c0f9eb5[www.renren.io]
+#    # token有效时长，7天，单位秒
+#    expire: 604800
+#    header: token

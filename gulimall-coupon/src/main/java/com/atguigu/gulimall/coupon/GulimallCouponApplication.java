@@ -13,6 +13,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  *             <groupId>com.alibaba.cloud</groupId>
  *             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
  *         </dependency>
+ *         开启nacos
  * 2）、创建一个bootstrap.properties。
  *      spring.application.name=gulimall-coupon
  *      spring.cloud.nacos.config.server-addr=127.0.0.1:8848

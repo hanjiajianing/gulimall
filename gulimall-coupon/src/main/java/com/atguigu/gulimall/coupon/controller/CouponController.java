@@ -3,6 +3,7 @@ package com.atguigu.gulimall.coupon.controller;
 import java.util.Arrays;
 import java.util.Map;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -26,6 +27,7 @@ import com.atguigu.common.utils.R;
  * @email leifengyang@gmail.com
  * @date 2019-10-08 09:36:40
  */
+@Slf4j
 @RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
@@ -41,7 +43,7 @@ public class CouponController {
 
     @RequestMapping("/test")
     public R test(){
-
+log.info("ok");
         return R.ok().put("name",name).put("age",age);
     }
 
